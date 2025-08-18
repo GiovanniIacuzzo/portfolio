@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Giovanni Iacuzzo - Portfolio</title>
+  <meta name="description" content="Portfolio personale di Giovanni Iacuzzo, studente magistrale in Ingegneria dell’Intelligenza Artificiale e della Sicurezza Informatica.">
+  <meta name="keywords" content="AI, Machine Learning, Portfolio, CV, Data Science, Sviluppo Software">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,12 +30,11 @@
 
 <body class="portfolio-details-page">
 
+  <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Personal</h1>
       </a>
 
@@ -45,7 +44,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -54,72 +53,40 @@
     </div>
   </header>
 
-  <main class="main">
+  <main id="main">
 
-    <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-            </div>
-          </div>
-        </div>
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li>Dettagli Progetto</li>
+        </ol>
+        <h2>Dettagli del Progetto</h2>
       </div>
-      <nav class="breadcrumbs">
-        <div class="container">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
-          </ol>
-        </div>
-      </nav>
-    </div><!-- End Page Title -->
+    </section><!-- End Breadcrumbs -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- ======= Portfolio Details Section ======= -->
+    <section class="portfolio-details">
+      <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper init-swiper">
-
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": "auto",
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  }
-                }
-              </script>
-
+            <div class="portfolio-details-slider swiper">
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="">
+                  <img src="assets/img/portfolio/portfolio-1.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="">
+                  <img src="assets/img/portfolio/portfolio-2.jpg" alt="">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="">
+                  <img src="assets/img/portfolio/portfolio-3.jpg" alt="">
                 </div>
 
               </div>
@@ -128,19 +95,19 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
+            <div class="portfolio-info">
+              <h3>Informazioni Progetto</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Categoria</strong>: Sviluppo Web</li>
+                <li><strong>Cliente</strong>: Cliente Esempio</li>
+                <li><strong>Data</strong>: 01 Marzo, 2025</li>
+                <li><strong>URL Progetto</strong>: <a href="#">www.esempio.com</a></li>
               </ul>
             </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+            <div class="portfolio-description">
+              <h2>Descrizione del Progetto</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Questo progetto consiste nella realizzazione di un sito web moderno e responsivo, ottimizzato per tutte le piattaforme e focalizzato sull’esperienza utente. È stato sviluppato utilizzando HTML, CSS, JavaScript e Bootstrap, con animazioni leggere e design pulito.
               </p>
             </div>
           </div>
@@ -148,38 +115,29 @@
         </div>
 
       </div>
+    </section><!-- End Portfolio Details Section -->
 
-    </section><!-- /Portfolio Details Section -->
+  </main><!-- End #main -->
 
-  </main>
-
+   <!-- Footer -->
   <footer id="footer" class="footer dark-background">
     <div class="container">
-      <h3 class="sitename">Personal</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+      <h3 class="sitename">Giovanni Giuseppe Iacuzzo</h3>
+      <p>Portfolio personale - Ingegneria dell’Intelligenza Artificiale e della Sicurezza Informatica.</p>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://github.com/giovanniIacuzzo" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/giovanni-iacuzzo" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:giovanni.iacuzzo@unikorestudent.it"><i class="bi bi-envelope"></i></a>
       </div>
       <div class="container">
         <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          © <strong class="px-1 sitename">Giovanni Giuseppe Iacuzzo</strong> | Tutti i diritti riservati
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
