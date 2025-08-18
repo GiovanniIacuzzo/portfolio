@@ -1240,19 +1240,28 @@ section,
   }
 }
 
+/*--------------------------------------------------------------
+# Portfolio Cards
+--------------------------------------------------------------*/
 .portfolio .portfolio-content {
   position: relative;
-  width: 100%;
-  aspect-ratio: 16/9; /* Puoi provare anche 4/3 o 1/1 */
   overflow: hidden;
-  border-radius: 8px; /* estetica più elegante */
+  width: 100%;
+  aspect-ratio: 16/9;        /* tutte le card hanno stessa altezza */
+  border-radius: 10px;       /* optional: angoli arrotondati */
+  background: #111;          /* colore di sfondo mentre carica l'immagine */
 }
 
 .portfolio .portfolio-content img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* riempie il box senza deformare */
+  object-fit: cover;         /* ritaglio centrale senza deformare */
   display: block;
+  transition: transform 0.3s ease;
+}
+
+.portfolio .portfolio-content:hover img {
+  transform: scale(1.1);
 }
 
 .portfolio .portfolio-content .portfolio-info {
@@ -1263,6 +1272,10 @@ section,
   transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.6);
   padding: 15px;
+}
+
+.portfolio .portfolio-content:hover .portfolio-info {
+  opacity: 1;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
