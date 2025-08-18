@@ -467,6 +467,8 @@ h6 {
 
 .footer .social-links {
   margin: 0 0 30px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .footer .social-links a {
