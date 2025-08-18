@@ -1248,6 +1248,7 @@ section,
   overflow: hidden;
   width: 100%;
   aspect-ratio: 16/9;        /* tutte le card hanno stessa altezza */
+  min-height: 400px;
   border-radius: 10px;       /* optional: angoli arrotondati */
   background: #111;          /* colore di sfondo mentre carica l'immagine */
 }
