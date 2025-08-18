@@ -1243,6 +1243,7 @@ section,
 .portfolio .portfolio-content {
   position: relative;
   overflow: hidden;
+  height: 375px;
 }
 
 .portfolio .portfolio-content img {
