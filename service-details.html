@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Giovanni Iacuzzo - Portfolio</title>
-  <meta name="description" content="Portfolio personale di Giovanni Iacuzzo, studente magistrale in Ingegneria dell’Intelligenza Artificiale e della Sicurezza Informatica.">
+  <meta name="description"
+    content="Portfolio personale di Giovanni Iacuzzo, studente magistrale in Ingegneria dell’Intelligenza Artificiale e della Sicurezza Informatica.">
   <meta name="keywords" content="AI, Machine Learning, Portfolio, CV, Data Science, Sviluppo Software">
 
   <!-- Favicons -->
@@ -15,7 +16,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -61,7 +64,9 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Dettagli Servizio</h1>
-              <p class="mb-0">Qui puoi trovare informazioni approfondite sui servizi che offro: dallo sviluppo di sistemi di Intelligenza Artificiale alla Sicurezza Informatica, fino alla creazione di software su misura per le esigenze dei clienti.</p>
+              <p class="mb-0">Qui puoi trovare informazioni approfondite sui servizi che offro: dallo sviluppo di
+                sistemi di Intelligenza Artificiale alla Sicurezza Informatica, fino alla creazione di software su
+                misura per le esigenze dei clienti.</p>
             </div>
           </div>
         </div>
@@ -80,45 +85,82 @@
     <section id="service-details" class="service-details section">
 
       <div class="container">
-
         <div class="row gy-4">
 
           <!-- Lista servizi -->
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="#" class="active">Intelligenza Artificiale</a>
-              <a href="#">Sicurezza Informatica</a>
-              <a href="#">Cloud Computing</a>
-              <a href="#">Data Analysis & Big data</a>
-              <a href="#">Sviluppo Software</a>
-              <a href="#">Consulenza Tecnologica</a>
+              <a href="#" class="active" data-service="ai">Intelligenza Artificiale</a>
+              <a href="#" data-service="security">Sicurezza Informatica</a>
+              <a href="#" data-service="cloud">Cloud Computing</a>
+              <a href="#" data-service="data">Data Analysis & Big Data</a>
+              <a href="#" data-service="software">Sviluppo Software</a>
+              <a href="#" data-service="consulting">Consulenza Tecnologica</a>
             </div>
 
             <h4>Servizi Personalizzati e Innovativi</h4>
-            <p>Ogni progetto viene sviluppato tenendo conto delle esigenze specifiche del cliente, combinando competenze avanzate in AI, sicurezza dei sistemi e software engineering per garantire soluzioni efficaci e sicure.</p>
+            <p>Ogni progetto viene sviluppato tenendo conto delle esigenze specifiche del cliente, combinando competenze
+              avanzate in AI, sicurezza dei sistemi e software engineering per garantire soluzioni efficaci e sicure.</p>
           </div>
 
           <!-- Dettagli servizio selezionato -->
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services/ai-service.webp" alt="Servizio Intelligenza Artificiale" class="img-fluid services-img">
-            <h3>Intelligenza Artificiale su Misura</h3>
-            <p>
-              Progetto e implemento sistemi di Intelligenza Artificiale personalizzati, come modelli di machine learning e reti neurali, per automatizzare processi, analizzare grandi quantità di dati e supportare decisioni strategiche.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Analisi dati avanzata e predittiva.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Sviluppo di modelli di machine learning e deep learning.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Integrazione con sistemi aziendali.</span></li>
-            </ul>
-            <p>
-              Garantisco soluzioni scalabili e sicure, con attenzione alla protezione dei dati e alla conformità alle normative vigenti. Ogni progetto è documentato e testato per garantire performance ottimali.
-            </p>
+
+            <!-- AI -->
+            <div class="service-content" id="ai">
+              <img src="assets/img/services/ai-service.webp" alt="AI" class="img-fluid services-img">
+              <h3>Intelligenza Artificiale su Misura</h3>
+              <p>Progetto e implemento sistemi di Intelligenza Artificiale personalizzati...</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Analisi dati avanzata e predittiva</li>
+                <li><i class="bi bi-check-circle"></i> Modelli ML e DL</li>
+                <li><i class="bi bi-check-circle"></i> Integrazione con sistemi aziendali</li>
+              </ul>
+            </div>
+
+            <!-- Security -->
+            <div class="service-content d-none" id="security">
+              <img src="assets/img/services/security-service.webp" alt="Sicurezza" class="img-fluid services-img">
+              <h3>Sicurezza Informatica</h3>
+              <p>Protezione dei sistemi informatici con strategie avanzate...</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Penetration test e analisi vulnerabilità</li>
+                <li><i class="bi bi-check-circle"></i> Architetture sicure</li>
+                <li><i class="bi bi-check-circle"></i> Formazione in cybersecurity</li>
+              </ul>
+            </div>
+
+            <!-- Cloud -->
+            <div class="service-content d-none" id="cloud">
+              <img src="assets/img/services/cloud-service.webp" alt="Cloud" class="img-fluid services-img">
+              <h3>Cloud Computing</h3>
+              <p>Soluzioni scalabili e flessibili su AWS, Azure, Google Cloud...</p>
+            </div>
+
+            <!-- Data -->
+            <div class="service-content d-none" id="data">
+              <img src="assets/img/services/data-service.webp" alt="Data" class="img-fluid services-img">
+              <h3>Data Analysis & Big Data</h3>
+              <p>Analisi avanzata dei dati per decisioni aziendali più efficaci...</p>
+            </div>
+
+            <!-- Software -->
+            <div class="service-content d-none" id="software">
+              <img src="assets/img/services/software-service.webp" alt="Software" class="img-fluid services-img">
+              <h3>Sviluppo Software</h3>
+              <p>Applicazioni personalizzate per web, mobile e desktop...</p>
+            </div>
+
+            <!-- Consulting -->
+            <div class="service-content d-none" id="consulting">
+              <img src="assets/img/services/consulting-service.webp" alt="Consulenza" class="img-fluid services-img">
+              <h3>Consulenza Tecnologica</h3>
+              <p>Supporto strategico per innovazione e trasformazione digitale...</p>
+            </div>
+
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Service Details Section -->
 
   </main>
@@ -143,7 +185,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -159,6 +202,31 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Switch dinamico dei servizi -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const links = document.querySelectorAll(".services-list a");
+      const contents = document.querySelectorAll(".service-content");
+
+      links.forEach(link => {
+        link.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // aggiorna attivo
+          links.forEach(l => l.classList.remove("active"));
+          this.classList.add("active");
+
+          // nasconde tutto
+          contents.forEach(c => c.classList.add("d-none"));
+
+          // mostra selezionato
+          const target = this.getAttribute("data-service");
+          document.getElementById(target).classList.remove("d-none");
+        });
+      });
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
