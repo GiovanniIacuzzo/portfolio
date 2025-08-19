@@ -787,6 +787,15 @@ section,
   line-height: 0;
 }
 
+.img-fluid {
+  border: 4px solid #000000; /* Colore brand */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
