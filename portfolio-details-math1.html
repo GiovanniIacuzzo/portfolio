@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Giovanni Iacuzzo - Portfolio</title>
-  <meta name="description" content="Portfolio personale di Giovanni Iacuzzo, studente magistrale in Ingegneria dell’Intelligenza Artificiale e della Sicurezza Informatica.">
-  <meta name="keywords" content="AI, Machine Learning, Portfolio, CV, Data Science, Sviluppo Software">
+  <meta name="description" content="Color-Based Segmentation con CPSO: progetto di Computer Vision e ottimizzazione per la segmentazione di immagini basata sul colore.">
+  <meta name="keywords" content="AI, Machine Learning, Computer Vision, Image Segmentation, CPSO, Particle Swarm Optimization">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Poppins:wght@300;500;700&family=Raleway:wght@300;600;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,27 +30,23 @@
 
 <body class="portfolio-details-page">
 
+  <!-- Header -->
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Giovanni Iacuzzo</h1>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
     </div>
   </header>
 
@@ -62,8 +58,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1>Color-Based Segmentation with CPSO</h1>
+              <p class="mb-0">Un approccio innovativo alla segmentazione delle immagini basato sull’ottimizzazione delle soglie cromatiche tramite Competitive Particle Swarm Optimization (CPSO).</p>
             </div>
           </div>
         </div>
@@ -72,19 +68,20 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current">Color-Based Segmentation with CPSO</li>
           </ol>
         </div>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
+    <!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
     <section id="portfolio-details" class="portfolio-details section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="row gy-4">
 
+          <!-- Slider -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
@@ -92,9 +89,7 @@
                 {
                   "loop": true,
                   "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
+                  "autoplay": { "delay": 4000 },
                   "slidesPerView": "auto",
                   "pagination": {
                     "el": ".swiper-pagination",
@@ -105,51 +100,50 @@
               </script>
 
               <div class="swiper-wrapper align-items-center">
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="">
+                  <img src="assets/img/portfolio/img16.png" alt="image 1">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="">
+                  <img src="assets/img/portfolio/img17.png" alt="Image 2">
                 </div>
-
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="">
+                  <img src="assets/img/portfolio/img18.png" alt="Image 3">
                 </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="">
-                </div>
-
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
 
+          <!-- Info & Description -->
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Category</strong>: Computer Vision</li>
+                <li><strong>Tipo</strong>: Ricerca Accademica</li>
+                <li><strong>Anno</strong>: 2024</li>
+                <li><strong>Repository</strong>: <a href="https://github.com/giovanniIacuzzo" target="_blank">GitHub</a></li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <h2>Segmentazione basata sul colore con CPSO</h2>
               <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+                Questo progetto applica <strong>Competitive Particle Swarm Optimization (CPSO)</strong> per la segmentazione delle immagini in spazi di colore come RGB e HSV.  
+                L’obiettivo è ottimizzare le soglie cromatiche al fine di ottenere segmentazioni più accurate e robuste rispetto ai metodi tradizionali.  
+              </p>
+              <p>
+                Il sistema è stato validato su dataset di immagini reali, dimostrando come l’approccio basato su swarm intelligence migliori le prestazioni in termini di accuratezza e stabilità.
+              </p>
+              <p>
+                <em>Tecnologie utilizzate:</em> Python, OpenCV, NumPy, Matplotlib.
               </p>
             </div>
           </div>
 
         </div>
-
       </div>
-
-    </section><!-- /Portfolio Details Section -->
+    </section>
+    <!-- /Portfolio Details Section -->
 
   </main>
 
@@ -173,7 +167,9 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -194,5 +190,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
