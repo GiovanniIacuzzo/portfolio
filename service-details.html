@@ -209,20 +209,38 @@
       const links = document.querySelectorAll(".services-list a");
       const contents = document.querySelectorAll(".service-content");
 
+      // Funzione per mostrare il servizio selezionato
+      function showService(serviceId) {
+        // reset
+        links.forEach(l => l.classList.remove("active"));
+        contents.forEach(c => c.classList.add("d-none"));
+
+        // mostra contenuto
+        const content = document.getElementById(serviceId);
+        if (content) {
+          content.classList.remove("d-none");
+          document.querySelector(`.services-list a[data-service="${serviceId}"]`).classList.add("active");
+        } else {
+          // fallback: AI
+          document.getElementById("ai").classList.remove("d-none");
+          document.querySelector(`.services-list a[data-service="ai"]`).classList.add("active");
+        }
+      }
+
+      // Legge parametro ?service=
+      const params = new URLSearchParams(window.location.search);
+      const service = params.get("service") || "ai"; // default ai
+
+      // Mostra quello giusto
+      showService(service);
+
+      // Gestisce click interni
       links.forEach(link => {
         link.addEventListener("click", function (e) {
           e.preventDefault();
-
-          // aggiorna attivo
-          links.forEach(l => l.classList.remove("active"));
-          this.classList.add("active");
-
-          // nasconde tutto
-          contents.forEach(c => c.classList.add("d-none"));
-
-          // mostra selezionato
           const target = this.getAttribute("data-service");
-          document.getElementById(target).classList.remove("d-none");
+          showService(target);
+          history.replaceState(null, "", "?service=" + target); // aggiorna URL senza ricaricare
         });
       });
     });
