@@ -789,7 +789,7 @@ section,
 
 .photo-card {
   width: 30vw;
-  max-width: 1024;
+  max-width: 1024px;
   height: auto;
   aspect-ratio: 1 / 1;
   overflow: hidden;
@@ -806,11 +806,6 @@ section,
   object-fit: cover;
   display: block;
   margin-top: -30px;
-}
-
-.photo-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .about-horizontal {
