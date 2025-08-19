@@ -788,7 +788,7 @@ section,
 }
 
 .photo-card {
-  width: 30vw;
+  width: 40vw;
   max-width: 140px;
   height: auto;
   aspect-ratio: 1 / 1;
@@ -825,11 +825,18 @@ section,
     flex-direction: column;
     text-align: center;
   }
-  
+
+  .photo-card {
+    width: 60vw;
+    max-width: none;
+    margin-top: -20px;
+  }
+
   .content {
     text-align: center;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Stats Section
