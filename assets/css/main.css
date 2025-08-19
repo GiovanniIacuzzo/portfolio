@@ -787,7 +787,7 @@ section,
   line-height: 0;
 }
 
-photo-card {
+.photo-card {
   width: 140px;
   height: 140px;
   overflow: hidden;
@@ -795,7 +795,7 @@ photo-card {
   border: 2px solid #000000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
-  margin: 0 auto; /* centra la foto su mobile */
+  margin: 0 auto;
 }
 
 .photo-card img {
@@ -803,6 +803,7 @@ photo-card {
   height: 100%;
   object-fit: cover;
   display: block;
+  margin-top: -30px;
 }
 
 .photo-card:hover {
@@ -810,7 +811,6 @@ photo-card {
   box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
-/* Layout orizzontale su desktop */
 .about-horizontal {
   display: flex;
   flex-wrap: wrap;
@@ -818,8 +818,7 @@ photo-card {
   gap: 30px;
 }
 
-/* Responsive: mobile */
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .about-horizontal {
     flex-direction: column;
     text-align: center;
