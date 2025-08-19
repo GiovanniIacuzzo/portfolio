@@ -788,8 +788,10 @@ section,
 }
 
 .photo-card {
-  width: 140px;
-  height: 140px;
+  width: 30vw;
+  max-width: 140px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: 8px; 
   border: 2px solid #000000;
