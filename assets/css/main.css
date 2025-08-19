@@ -788,12 +788,12 @@ section,
 }
 
 .photo-card {
-  width: 30vw;
+  width: 29.5vw;
   max-width: 1024px;
   height: auto;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  border-radius: 8px; 
+  border-radius: 8px;
   border: 2px solid #000000;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
@@ -805,7 +805,6 @@ section,
   height: 100%;
   object-fit: cover;
   display: block;
-  margin-top: -30px;
 }
 
 .about-horizontal {
