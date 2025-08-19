@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Giovanni Iacuzzo - Portfolio</title>
-  <meta name="description" content="Portfolio personale di Giovanni Iacuzzo, studente magistrale in Ingegneria dell’Intelligenza Artificiale e della Sicurezza Informatica.">
-  <meta name="keywords" content="AI, Machine Learning, Portfolio, CV, Data Science, Sviluppo Software">
+  <title>Giovanni Iacuzzo - Portfolio | Prolog vs XGBClassifier</title>
+  <meta name="description" content="Confronto tra Prolog (IA classica) e XGBoost (machine learning) per l’analisi di tratti di personalità da dati sperimentali combinando Eye Tracking e Handwriting.">
+  <meta name="keywords" content="AI, Machine Learning, Prolog, XGBoost, Eye Tracking, Handwriting, Personality Analysis, Dataset Sperimentali">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="assets/img/favicon.png">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,8 +34,6 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Giovanni Iacuzzo</h1>
       </a>
 
@@ -45,7 +43,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="resume.html">Resume</a></li>
           <li><a href="services.html">Services</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -62,8 +60,8 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1>Prolog vs XGBClassifier – Analisi dei Tratti della Personalità</h1>
+              <p class="mb-0">Progetto di ricerca che confronta approcci di IA classica (sistemi a regole in Prolog) e di machine learning (XGBoost) per l’analisi dei tratti della personalità attraverso dati multimodali di Eye Tracking e Handwriting.</p>
             </div>
           </div>
         </div>
@@ -72,7 +70,8 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li class="current">Prolog vs XGBClassifier</li>
           </ol>
         </div>
       </nav>
@@ -85,6 +84,7 @@
 
         <div class="row gy-4">
 
+          <!-- Slider con immagini -->
           <div class="col-lg-8">
             <div class="portfolio-details-slider swiper init-swiper">
 
@@ -107,19 +107,15 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.webp" alt="">
+                  <img src="assets/img/portfolio/snap4.jpg" alt="Dataset multimodale Eye Tracking + Handwriting">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.webp" alt="">
+                  <img src="assets/img/portfolio/Sistemi-Esperti.jpg" alt="Sistemi Esperti">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.webp" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.webp" alt="">
+                  <img src="assets/img/portfolio/image.png" alt="Classificatore XGBoost">
                 </div>
 
               </div>
@@ -127,21 +123,26 @@
             </div>
           </div>
 
+          <!-- Info progetto -->
           <div class="col-lg-4">
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
+              <h3>Informazioni sul progetto</h3>
               <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+                <li><strong>Categoria</strong>: Artificial Intelligence / Machine Learning</li>
+                <li><strong>Ruolo</strong>: Studente Ricercatore</li>
+                <li><strong>Istituzione</strong>: Università degli Studi di Enna “Kore”</li>
+                <li><strong>Anno</strong>: 2025</li>
+                <li><strong>Progetto</strong>: Analisi dei Tratti della Personalità con Prolog e XGBoost</li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <h2>Descrizione del progetto</h2>
+              <p><strong>Obiettivo:</strong> sviluppare un sistema sperimentale per l’analisi dei tratti della personalità, confrontando un approccio basato su regole in Prolog con un modello di machine learning (XGBoost).</p>
+              <p><strong>Dataset:</strong> raccolta e creazione di un dataset combinando misure di <em>Eye Tracking</em> e <em>Handwriting</em>, con etichettatura tramite questionari psicometrici.</p>
+              <p><strong>Metodologia:</strong> preprocessing dei dati (normalizzazione e feature extraction), implementazione di un sistema a regole in Prolog e addestramento di un classificatore XGBoost per valutare le performance.</p>
+              <p><strong>Valutazione:</strong> confronto quantitativo tramite accuracy, precision, recall e F1-score, con particolare attenzione all’interpretabilità delle regole rispetto ai modelli ensemble.</p>
+              <p><strong>Risultati:</strong> XGBoost ha ottenuto performance superiori, ma il sistema Prolog si è dimostrato più interpretabile e utile per spiegare i tratti individuati.</p>
+              <p><strong>Competenze sviluppate:</strong> Prolog, Python, XGBoost, creazione di dataset sperimentali multimodali, analisi statistica e interpretabilità dei modelli.</p>
             </div>
           </div>
 
