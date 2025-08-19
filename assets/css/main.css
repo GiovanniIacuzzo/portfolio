@@ -787,13 +787,27 @@ section,
   line-height: 0;
 }
 
-.img-fluid {
-  border: 4px solid #000000; /* Colore brand */
+.photo-card {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 4px solid #000000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: transform 0.3s, box-shadow 0.3s;
+  margin: 0 auto;
 }
-.img-fluid:hover {
+
+.photo-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /*--------------------------------------------------------------
