@@ -233,12 +233,21 @@
           headers: { 'Accept': 'application/json' }
         });
 
-        const result = await response.json();
+        let result = {};
+        try {
+          result = await response.json();
+        } catch (e) {
+        }
+
         loading.style.display = "none";
 
         if (response.ok && result.ok) {
           sentMsg.style.display = "block";
           form.reset();
+
+          // nascondi dopo 5 secondi
+          setTimeout(() => { sentMsg.style.display = "none"; }, 5000);
+
         } else {
           errorMsg.style.display = "block";
           errorMsg.textContent = "❌ Errore nell'invio. Riprova più tardi.";
