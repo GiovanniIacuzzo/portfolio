@@ -155,11 +155,13 @@
             </div>
 
             <div class="col-md-12 text-center">
-              <div class="loading">Caricamento...</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Il tuo messaggio è stato inviato. Grazie!</div>
 
-              <button type="submit">Invia Messaggio</button>
+              <!-- Alert nascosti di default -->
+              <div class="alert alert-info loading" style="display:none;">⏳ Invio in corso...</div>
+              <div class="alert alert-danger error-message" style="display:none;"></div>
+              <div class="alert alert-success sent-message" style="display:none;">✅ Il tuo messaggio è stato inviato. Grazie!</div>
+
+              <button type="submit" class="btn btn-primary mt-3">Invia Messaggio</button>
             </div>
 
           </div>
@@ -231,9 +233,10 @@
           headers: { 'Accept': 'application/json' }
         });
 
+        const result = await response.json();
         loading.style.display = "none";
 
-        if (response.ok) {
+        if (response.ok && result.ok) {
           sentMsg.style.display = "block";
           form.reset();
         } else {
