@@ -135,7 +135,7 @@
         </div>
 
         <!-- Contact Form -->
-        <form action="https://formspree.io/f/mkgzlowp" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
+        <form id="contact-form" action="https://formspree.io/f/mkgzlowp" method="POST" class="php-email-form" data-aos="fade-up" data-aos-delay="600">
           <div class="row gy-4">
 
             <div class="col-md-6">
@@ -207,6 +207,46 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script>
+    const form = document.getElementById("contact-form");
+    const loading = form.querySelector(".loading");
+    const errorMsg = form.querySelector(".error-message");
+    const sentMsg = form.querySelector(".sent-message");
+
+    form.addEventListener("submit", async function(event) {
+      event.preventDefault();
+
+      // Reset stati
+      loading.style.display = "block";
+      errorMsg.style.display = "none";
+      sentMsg.style.display = "none";
+
+      const data = new FormData(form);
+
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        });
+
+        loading.style.display = "none";
+
+        if (response.ok) {
+          sentMsg.style.display = "block";
+          form.reset();
+        } else {
+          errorMsg.style.display = "block";
+          errorMsg.textContent = "❌ Errore nell'invio. Riprova più tardi.";
+        }
+      } catch (error) {
+        loading.style.display = "none";
+        errorMsg.style.display = "block";
+        errorMsg.textContent = "❌ Errore di connessione.";
+      }
+    });
+  </script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
